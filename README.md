@@ -14,10 +14,11 @@ Esta base contém os seguintes atributos:
  - safety      
  - class
  
- A base de dados está no arquivo car.data, em formato texto, com os campos separados por vírgula (CSV). Existem 1728 observações.
- 
- 
- 
+ A base de dados propriamente dita está no arquivo car.data, em formato texto, com os campos separados por vírgula (CSV). 
+
+Serão feitas a exploração de dados e classificação.
+
+
  Tarefas:
  
  Aplicar algorimos:
@@ -34,3 +35,13 @@ Esta base contém os seguintes atributos:
  ctree
  rpart
  
+
+# Exploração de Dados
+
+
+Dimensões: a base contém 1728 observações, com 7 atributos/variáveis.
+
+
+install.packages("party")
+library(party)
+
