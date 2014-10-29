@@ -51,23 +51,25 @@ Dimensões: a base contém 1728 observações, com 7 atributos/variáveis.
  unacc:1210  
  vgood:  65  
  
- table(data$class)
-
+> table(data$class)
   acc  good unacc vgood 
   384    69  1210    65 
   
  
- # processamento de dados
+- processamento de dados
  
  resulta em dados analiticos
  
- # codigo analitico
+- codigo analitico
  
  resultados computacionais
  
- # resultados
+- resultados
  
- ## Árvore de Decisão
+
+## Árvore de Decisão
+
+### ctree
  
 install.packages("party")
 
@@ -76,16 +78,15 @@ library(party)
  ctree
  
  A base será dividida em dois subgrupos, de treino e teste, inicialmente na proporção de 70% e 30%.
- 
-  table (predict(dtree),train$class)
-       
+
+> table (predict(dtree),train$class)
         acc good unacc vgood
   acc   252    4    22     8
   good    9   51     2     3
   unacc  11    0   847     0
   vgood   0    1     0    32
  
- pred    acc good unacc vgood
+> pred    acc good unacc vgood
   acc   106    3     8     5
   good    2    8     0     5
   unacc   3    0   331     0
