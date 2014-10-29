@@ -77,9 +77,21 @@ library(party)
  
  A base será dividida em dois subgrupos, de treino e teste, inicialmente na proporção de 70% e 30%.
  
+  table (predict(dtree),train$class)
+       
+        acc good unacc vgood
+  acc   252    4    22     8
+  good    9   51     2     3
+  unacc  11    0   847     0
+  vgood   0    1     0    32
  
- 
- 
+ pred    acc good unacc vgood
+  acc   106    3     8     5
+  good    2    8     0     5
+  unacc   3    0   331     0
+  vgood   1    2     0    12
+  
+  
  
  rpart
  
